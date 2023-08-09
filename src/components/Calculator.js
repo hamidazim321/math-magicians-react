@@ -19,7 +19,7 @@ function Calculator() {
   return (
     <div className="calculator">
       <div className="calculator-screen">
-        {calcObj.total}
+        <p>{calcObj.total}</p>
       </div>
       <CalcBtn text="AC" handleClick={handleClick} />
       <CalcBtn text="+/-" handleClick={handleClick} />
