@@ -13,17 +13,13 @@ function Calculator() {
   );
 
   const handleClick = (btnName) => {
-    const newData = calculate(calcObj, btnName);
-    if (newData.total === null && Number(btnName)) {
-      newData.total = btnName;
-    }
-    updateCalcObj(newData);
+    updateCalcObj(calculate(calcObj, btnName));
   };
 
   return (
     <div className="calculator">
       <div className="calculator-screen">
-        <p>{calcObj.total}</p>
+        <p>{calcObj.next || calcObj.operation || calcObj.total}</p>
       </div>
       <CalcBtn text="AC" handleClick={handleClick} />
       <CalcBtn text="+/-" handleClick={handleClick} />
