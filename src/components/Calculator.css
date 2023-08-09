@@ -1,0 +1,29 @@
+.calculator {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 35%;
+}
+
+.calculator-screen {
+    grid-column: 1/span 4;
+    height: 60px;
+    background-color: rgb(133, 117, 117);
+    border: solid 1px grey;
+}
+
+.btn {
+    height: 60px;
+    border: solid 1px grey;
+    background-color: silver;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-zero {
+    grid-column: 1/ span 3;
+}
+
+.btn-red {
+    background-color: rgb(230, 113, 35);
+}
+

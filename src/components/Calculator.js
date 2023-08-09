@@ -1,3 +1,4 @@
+import './Calculator.css';
 import CalcBtn from './Btn';
 
 function Calculator() {
