@@ -13,7 +13,11 @@ function Calculator() {
   );
 
   const handleClick = (btnName) => {
-    updateCalcObj(calculate(calcObj, btnName));
+    const newData = calculate(calcObj, btnName);
+    if (newData.total === null && Number(btnName)) {
+      newData.total = btnName;
+    }
+    updateCalcObj(newData);
   };
 
   return (

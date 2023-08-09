@@ -16,14 +16,14 @@ export default function operate(numberOne, numberTwo, operation) {
     try {
       return one.div(two).toString();
     } catch (err) {
-      return "Can't divide by 0.";
+      return 'Math Error';
     }
   }
   if (operation === '%') {
     try {
       return one.mod(two).toString();
     } catch (err) {
-      return "Can't find modulo as can't divide by 0.";
+      return 'Math Error';
     }
   }
   throw Error(`Unknown operation '${operation}'`);
