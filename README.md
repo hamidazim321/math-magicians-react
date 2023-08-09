@@ -121,7 +121,7 @@ You can deploy this project using Github Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **more features will be decided and updated in the future**
+- [ ] **Random quotes will be displayed for users**
 - [ ] **Feel free to recommend any features in the issues**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
