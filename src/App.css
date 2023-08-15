@@ -1,5 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .Front {
-  display: flex;
-  padding: 2%;
-  align-items: center;
+    padding: 20px;
 }
