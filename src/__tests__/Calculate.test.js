@@ -30,4 +30,19 @@ describe('should return correct object', () => {
       total: '10',
     });
   });
+
+  test('returns 11.2 as total', () => {
+    const object = {
+      total: 9.2,
+      next: 2,
+      operation: '+',
+    };
+    const btnName = '=';
+    const result = calculate(object, btnName);
+    expect(result).toMatchObject({
+      next: null,
+      operation: null,
+      total: '11.2',
+    });
+  });
 });

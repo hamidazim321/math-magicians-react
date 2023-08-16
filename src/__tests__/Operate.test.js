@@ -26,6 +26,11 @@ describe('should do correct math operations', () => {
     expect(result).toBe('1');
   });
 
+  test('9.2 + 2 = 11.2', () => {
+    const result = operate(9.2, 2, '+');
+    expect(result).toBe('11.2');
+  });
+
   test('4 ÷ 0 = Math Error', () => {
     const result = operate(4, 0, '÷');
     expect(result).toBe('Math Error');
