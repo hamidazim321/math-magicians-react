@@ -12,13 +12,13 @@ afterEach(() => {
 
 describe('Integration test for App', () => {
   test('Renders App', () => {
-    	const tree = renderer
-    		.create(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>,
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <App />
+        </MemoryRouter>,
       )
-    		.toJSON();
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
