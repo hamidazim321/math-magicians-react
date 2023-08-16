@@ -20,4 +20,14 @@ describe('should do correct math operations', () => {
     const result = operate(4, 2, 'x');
     expect(result).toBe('8');
   });
+
+  test('9 % 2 = 1', () => {
+    const result = operate(9, 2, '%');
+    expect(result).toBe('1');
+  });
+
+  test('4 ÷ 0 = Math Error', () => {
+    const result = operate(4, 0, '÷');
+    expect(result).toBe('Math Error');
+  });
 });
