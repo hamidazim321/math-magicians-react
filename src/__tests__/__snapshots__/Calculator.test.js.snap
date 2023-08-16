@@ -116,6 +116,12 @@ exports[`Integration tests for calculator component should render 1`] = `
       0
     </button>
     <button
+      class="btn "
+      type="button"
+    >
+      .
+    </button>
+    <button
       class="btn btn-red"
       type="button"
     >

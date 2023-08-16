@@ -129,4 +129,21 @@ describe('Integration tests for calculator component', () => {
     const calcScreen = document.querySelector('.calculator-screen p');
     expect(await calcScreen.textContent).toBe('Math Error');
   });
+
+  test('2.5 x 2 = 5', async () => {
+    render(<Calculator />);
+    const btn1 = await screen.findByText('2');
+    const btn2 = await screen.findByText('.');
+    const btn3 = await screen.findByText('5');
+    const btnTimes = await screen.findByText('x');
+    const btnEqual = await screen.findByText('=');
+    await fireEvent.click(btn1);
+    await fireEvent.click(btn2);
+    await fireEvent.click(btn3);
+    await fireEvent.click(btnTimes);
+    await fireEvent.click(btn1);
+    await fireEvent.click(btnEqual);
+    const calcScreen = document.querySelector('.calculator-screen p');
+    expect(await calcScreen.textContent).toBe('5');
+  });
 });
