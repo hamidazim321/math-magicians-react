@@ -111,13 +111,18 @@ You can deploy this project using Github Pages
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Hamid Azim**
 
 - GitHub: [@hamidazim321](https://github.com/hamidazim321)
 - Twitter: [@hamidazim321](https://twitter.com/hamidazim321)
 - Linkedin [@hamid azim](https://www.linkedin.com/in/hamid-azim-61a525273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhTLWAY8IS9WHu00%2BL5cAaA%3D%3D)
+
+👤 **Winnie**
+
+- GitHub: [@Wineshuga](https://github.com/wineshuga)
+- Twitter: [@Wineshuga](https://twitter.com/wineshuga)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
