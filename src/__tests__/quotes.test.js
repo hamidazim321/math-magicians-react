@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Quotes from '../components/quotes'; // Make sure the path is correct
 
 test('renders quote', async () => {
@@ -13,8 +13,11 @@ test('renders quote', async () => {
     json: jest.fn().mockResolvedValue(response),
   });
 
-  const { asFragment } = await render(<Quotes />);
+  render(<Quotes />);
   
-  // Wait for the quote to be displayed
-  expect(asFragment()).toMatchSnapshot();
+  await screen.findByText(/mocked quote/);
+
+  const quotesDiv = document.getElementsByClassName('quotes')[0]
+
+  expect(quotesDiv).toMatchSnapshot()
 });

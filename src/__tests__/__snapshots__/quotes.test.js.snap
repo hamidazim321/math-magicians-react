@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders quote 1`] = `
-<DocumentFragment>
-  <div
-    class="quotes"
+<div
+  class="quotes"
+>
+  <q
+    class="quote"
   >
-    <span
-      class="loading"
-    />
-  </div>
-</DocumentFragment>
+    mocked quote
+  </q>
+</div>
 `;
