@@ -42,6 +42,7 @@ function Calculator() {
         <CalcBtn text="3" handleClick={handleClick} />
         <CalcBtn text="+" handleClick={handleClick} />
         <CalcBtn text="0" handleClick={handleClick} />
+        <CalcBtn text="." handleClick={handleClick} />
         <CalcBtn text="=" handleClick={handleClick} />
       </div>
     </>
