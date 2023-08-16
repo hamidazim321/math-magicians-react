@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render a quote or error renders quote 1`] = `
+<div
+  class="quotes"
+>
+  <q
+    class="quote"
+  >
+    mocked quote
+  </q>
+</div>
+`;
+
+exports[`renders quote 1`] = `
+<div
+  class="quotes"
+>
+  <q
+    class="quote"
+  >
+    mocked quote
+  </q>
+</div>
+`;

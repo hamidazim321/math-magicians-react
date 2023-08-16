@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Integration tests for calculator component should render 1`] = `
+<DocumentFragment>
+  <h1>
+    Lets Do Some Math!
+  </h1>
+  <div
+    class="calculator"
+  >
+    <div
+      class="calculator-screen"
+    >
+      <p />
+    </div>
+    <button
+      class="btn "
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      %
+    </button>
+    <button
+      class="btn btn-red"
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      7
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      8
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      9
+    </button>
+    <button
+      class="btn btn-red"
+      type="button"
+    >
+      x
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      4
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      5
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      6
+    </button>
+    <button
+      class="btn btn-red"
+      type="button"
+    >
+      -
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      1
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      2
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      3
+    </button>
+    <button
+      class="btn btn-red"
+      type="button"
+    >
+      +
+    </button>
+    <button
+      class="btn btn-zero "
+      type="button"
+    >
+      0
+    </button>
+    <button
+      class="btn "
+      type="button"
+    >
+      .
+    </button>
+    <button
+      class="btn btn-red"
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</DocumentFragment>
+`;
