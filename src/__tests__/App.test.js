@@ -1,60 +1,60 @@
-import {render, screen, fireEvent, cleanup} from '@testing-library/react'
+import {
+  render, screen, fireEvent, cleanup,
+} from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import '@testing-library/jest-dom'
-import App from '../App'
+import '@testing-library/jest-dom';
+import App from '../App';
 
-afterEach(()=>{
-	cleanup()
-})
+afterEach(() => {
+  cleanup();
+});
 
-describe('Integration test for App', ()=> {
-    test('Renders App', ()=> {
+describe('Integration test for App', () => {
+  test('Renders App', () => {
     	const tree = renderer
     		.create(
-					<MemoryRouter>
-						<App/>
-					</MemoryRouter>
-					)
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+      )
     		.toJSON();
-			expect(tree).toMatchSnapshot()
-    })
+    expect(tree).toMatchSnapshot();
+  });
 
-		test('load the Quotes component by clickin on quotes in Navbar', async ()=>{
-			const response = [
-				{
-					quote: 'mocked quote',
-				},
-			];
-			global.fetch = jest.fn().mockResolvedValue({
-				json: jest.fn().mockResolvedValue(response),
-			});
-					
-			render(
-				<MemoryRouter>
-					<App/>
-				</MemoryRouter>
-			)
+  test('load the Quotes component by clickin on quotes in Navbar', async () => {
+    const response = [
+      {
+        quote: 'mocked quote',
+      },
+    ];
+    global.fetch = jest.fn().mockResolvedValue({
+      json: jest.fn().mockResolvedValue(response),
+    });
 
-			const quotes = await screen.findByText(/Quotes/)
-			fireEvent.click(quotes)
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
 
-			expect((await screen.findByText(/mocked/)).textContent).toBe('mocked quote')
-		})
+    const quotes = await screen.findByText(/Quotes/);
+    fireEvent.click(quotes);
 
-		test('load the calculator component by clickin on Calculator in Navbar', async ()=>{
+    expect((await screen.findByText(/mocked/)).textContent).toBe('mocked quote');
+  });
 
-			render(
-				<MemoryRouter>
-					<App/>
-				</MemoryRouter>
-			)
+  test('load the calculator component by clickin on Calculator in Navbar', async () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
 
-			const calculator = await screen.findByText(/Calculator/)
-			fireEvent.click(calculator)
+    const calculator = await screen.findByText(/Calculator/);
+    fireEvent.click(calculator);
 
-			const calc = document.getElementsByClassName('calculator')[0]
-			expect(calc).toBeInTheDocument()
-
-		})
-})
+    const calc = document.getElementsByClassName('calculator')[0];
+    expect(calc).toBeInTheDocument();
+  });
+});

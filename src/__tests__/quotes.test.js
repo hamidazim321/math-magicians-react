@@ -9,28 +9,27 @@ describe('Render a quote or error', () => {
         quote: 'mocked quote',
       },
     ];
-  
+
     global.fetch = jest.fn().mockResolvedValue({
       json: jest.fn().mockResolvedValue(response),
     });
-  
+
     render(<Quotes />);
-    
+
     await screen.findByText(/mocked quote/);
-  
-    const quotesDiv = document.getElementsByClassName('quotes')[0]
-  
-    expect(quotesDiv).toMatchSnapshot()
+
+    const quotesDiv = document.getElementsByClassName('quotes')[0];
+
+    expect(quotesDiv).toMatchSnapshot();
   });
-  
-  test('show error when the quote is not there', async ()=>{
+
+  test('show error when the quote is not there', async () => {
     global.fetch = jest.fn().mockResolvedValue({
       json: jest.fn().mockResolvedValue(new Error()),
     });
-  
-    render(<Quotes />);
-  
-    expect((await screen.findByText(/Error/)).textContent).toBe('Error loading the quotes. Please try again.')
-  })
 
-})
+    render(<Quotes />);
+
+    expect((await screen.findByText(/Error/)).textContent).toBe('Error loading the quotes. Please try again.');
+  });
+});
