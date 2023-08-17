@@ -59,6 +59,13 @@
 - **Allows users to make simple math calculations**
 - **Displays random quotes**
 
+### Live Demo <a name="live-demo"></a>
+
+-  [See live](https://math-magicians-05nw.onrender.com)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
